@@ -13,7 +13,8 @@ export default function Chat({ location }) {
   const [room, setRoom] = useState("");
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
-  const ENDPOINT = "localhost:8080";
+  // const ENDPOINT = "localhost:8080";
+  const ENDPOINT = "https://ari-chat.herokuapp.com";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
