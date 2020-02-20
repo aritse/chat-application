@@ -1,6 +1,7 @@
 const express = require("express");
 const http = require("http");
 const socketio = require("socket.io");
+const cors = require("cors");
 const { addUser, removeUser, getUser, getUsersInRoom } = require("./users");
 
 const PORT = process.env.PORT || 8080;
@@ -8,6 +9,7 @@ const router = require("./router");
 
 const app = express();
 app.use(router);
+app.use(cors());
 
 const server = http.createServer(app);
 
