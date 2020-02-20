@@ -13,7 +13,7 @@ export default function InfoBar({ room }) {
       </div>
       <div className="rightInnerContainer">
         <a href="/">
-          <img clasName="closeIcon" src={closeIcon} alt="close icon"></img>
+          <img className="closeIcon" src={closeIcon} alt="close icon"></img>
         </a>
       </div>
     </div>
